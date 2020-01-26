@@ -172,6 +172,14 @@ for ((startX, startY, endX, endY), text) in results:
     print("{}\n".format(text))
     print("Top left corner (x,y): ({},{})".format(startX, startY))
     print("Bottom right corner (x,y): ({},{})".format(endX, endY))
+    if text == "STO":
+        print("That's the first one to move")
+    if text == "LAT":
+        print("That's the second one to move")
+    if text == "AGH":
+        print("That's the third one to move")
+    if text == "2020":
+        print("That's the fourth one to move")
 
     # strip out non-ASCII text so we can draw the text on the image
     # using OpenCV, then draw the text and a bounding box surrounding
