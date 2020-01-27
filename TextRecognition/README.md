@@ -1,5 +1,5 @@
 # Silnik rozpoznawania tekstu
-##Założenia
+## Założenia
 
 W projekcie silnik rozpoznawania tekstu jest odpowiedzialny za poprawne wykrycie i rozpoznanie tekstu, który mamy na klockach.
 
@@ -8,7 +8,7 @@ Z kolei nasz program może zwracać stronie sprzętowej miejsca, w których teks
 
 Dzięki temu (w zależności od treści) program będzie mógł prawidłowo zareagować - ułożyć klocki w pożądanej pozycji.
 
-##Do uruchomienia potrzebne będzie
+## Do uruchomienia potrzebne będzie
 
 Silnik zaprojektowany został w OpenCV z Python bindings.
 
@@ -16,7 +16,7 @@ Poza tym oprogramowaniem konieczne będą następujące biblioteki (plik require
 
 Niezbędny jest również plik frozen_east_text_detection.pb.
 
-##Działanie programu 
+## Działanie programu 
 
 Korzystając z EAST Text Detectora (EAST: An Efficient and Accurate Scene Text Detector) możemy dokonywać detekcji oraz rozpoznawania tekstu.
 Próbowaliśmy korzystać również z PyTesseract, ale algorytm nie posiadał takiej dokładności.
@@ -26,7 +26,7 @@ Algorytm przetwarza zdjęcie "od góry do dołu" w osi Y, i "od lewej do prawej"
 
 Użytym przez nas fontem dla nadruku na klockach był Arial. Sprawdziła się tutaj zasada "im prostszy font tym lepszy" - rozpoznawanie np. ręcznie napisanego wyrazu, z pozoru starannie, było niemożliwe.
 
-##Źródła
+## Źródła
 1. https://arxiv.org/pdf/1704.03155.pdf
 2. https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
 3. https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/
