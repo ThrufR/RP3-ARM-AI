@@ -29,5 +29,8 @@ Qt Library also hasn't worked in 100% properly.
 
 In the meantime, we developed the algorithm to recognize text on the image (readme.md in a proper folder). If all issues with hardware would be solved, the next step will be integrating those elements altogether.
 
+##Video
+https://drive.google.com/file/d/1RCQ3hy0kGzJRhvUu3aeNPHm8v3XHwUGA/view?usp=sharing
+
 
 
