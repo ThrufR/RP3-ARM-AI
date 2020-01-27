@@ -6,13 +6,15 @@ W projekcie silnik rozpoznawania tekstu jest odpowiedzialny za poprawne wykrycie
 Zakładamy, że strona sprzętowa wysyła nam sygnał startujący nasz program.
 Z kolei nasz program może zwracać stronie sprzętowej miejsca, w których tekst został wykryty oraz jego treść.
 
+![modules](https://user-images.githubusercontent.com/49162902/73171795-dd317480-4101-11ea-8f3d-ed867adb2331.png)
+
 Dzięki temu (w zależności od treści) program będzie mógł prawidłowo zareagować - ułożyć klocki w pożądanej pozycji.
 
 ## Do uruchomienia potrzebne będzie
 
 Silnik zaprojektowany został w OpenCV z Python bindings.
 
-Poza tym oprogramowaniem konieczne będą następujące biblioteki (plik requirements.txt). Instalujemy je w stworzonym przez nas środowisku wirtualnym.
+Poza tym oprogramowaniem konieczne będą biblioteki, które znajdują się w pliku requirements.txt. Instalujemy je w stworzonym przez nas środowisku wirtualnym.
 
 Niezbędny jest również plik frozen_east_text_detection.pb.
 
@@ -23,6 +25,8 @@ Próbowaliśmy korzystać również z PyTesseract, ale algorytm nie posiadał ta
 Znacznie gorzej również rozpoznaje fonty.
 
 Algorytm przetwarza zdjęcie "od góry do dołu" w osi Y, i "od lewej do prawej" w osi X.
+
+![directions](https://user-images.githubusercontent.com/49162902/73171219-85463e00-4100-11ea-8bea-0c95714efb3d.png)
 
 Użytym przez nas fontem dla nadruku na klockach był Arial. Sprawdziła się tutaj zasada "im prostszy font tym lepszy" - rozpoznawanie np. ręcznie napisanego wyrazu, z pozoru starannie, było niemożliwe.
 
